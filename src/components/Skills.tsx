@@ -97,7 +97,7 @@ const Skills = () => {
               <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full" />
-                  Custom Shopify theme development using Liquid
+                  Custom Shopify theme section using Liquid
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full" />
