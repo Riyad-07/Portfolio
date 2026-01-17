@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Airbnb Clone",
     description:
-      "A full-featured Airbnb clone with dynamic property listings, search functionality, and a modern user interface. Built with MongoDB for backend data management.",
+      "A full-featured Airbnb clone with dynamic property listings and a modern user interface. Built with MongoDB for backend data management.",
     image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
     liveUrl: "https://airbnb-01.onrender.com",
     features: ["Dynamic Listings", "Modern UI", "MongoDB Backend", "Responsive Design"],

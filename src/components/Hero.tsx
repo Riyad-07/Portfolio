@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { Github, Mail, Phone, MapPin, Download } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import reactpng from "../../public/react.png"
+import nodejspng from "../../public/nodejs.png"
+import mongodb from "../../public/MongoDB.png"
+import dsa from "../../public/dsa.png"
+import express from "../../public/expressJs.png"
+import algorithm from "../../public/algorithm.png"
 
 const Hero = () => {
 
@@ -153,26 +159,29 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute -top-14 left-[40%] -translate-x-1/2 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
-              {'<React />'}
+              <img src={reactpng} alt="" className="h-10 w-10 mx-auto" />
+              ReactJs
             </motion.div>
 
 
             <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-              className="absolute top-1/4 -right-10 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute top-[10%] -right-10 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
-              Node.js
+              <img src={nodejspng} alt="" className="h-10 w-10 mx-auto scale-150" /> 
+              NodeJs           
             </motion.div>
 
 
             <motion.div
               animate={{ y: [-5, 15, -5] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-1/4 -right-12 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute bottom-[15%] -right-12 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
+              <img src={mongodb} alt="" className="h-10 w-10 mx-auto" />
               MongoDB
             </motion.div>
 
@@ -180,17 +189,19 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-12, 12, -12] }}
               transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.4 }}
-              className="absolute -bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute -bottom-10 left-[40%] -translate-x-1/2 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
-              Express.js
+              <img src={express} alt="" className="h-10 w-10 mx-auto" />
+              ExpressJs
             </motion.div>
 
 
             <motion.div
               animate={{ y: [8, -8, 8] }}
               transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 1.8 }}
-              className="absolute bottom-1/4 -left-12 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute bottom-[15%] -left-12 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
+              <img src={dsa} alt="" className="h-10 w-10 mx-auto scale-125" />
               DSA
             </motion.div>
 
@@ -198,8 +209,9 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-6, 14, -6] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2.2 }}
-              className="absolute top-1/4 -left-10 px-4 py-2 rounded-lg glass-card text-sm font-mono"
+              className="absolute top-[10%] -left-10 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
             >
+              <img src={algorithm} alt="" className="h-10 w-10 mx-auto scale-125" />
               Algorithms
             </motion.div>
 
