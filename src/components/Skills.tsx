@@ -3,10 +3,13 @@ import {
   SiNodedotjs, SiExpress,
   SiMongodb, SiMysql,
   SiShopify, SiWordpress,
-  SiGit, SiGithub, SiPostman, SiNextdotjs, 
+  SiGit, SiGithub, SiPostman, SiNextdotjs 
 } from "react-icons/si";
 import { TbApi, TbDatabase    } from "react-icons/tb";
-import hoppscotch from "../../public/hoppscotch.jpg"
+import hoppscotch from "../../public/hoppscotch.jpg";
+import { BiLogoVisualStudio } from "react-icons/bi";
+
+
 interface Skill {
   name: string;
   icon: React.ComponentType<{ className?: string }>;
@@ -68,6 +71,7 @@ const skillCategories: SkillCategory[] = [
     direction: "left",
     speed: "slow",
     skills: [
+      { name: "VS Code", icon: BiLogoVisualStudio, color: "text-blue-500" },
       { name: "Git", icon: SiGit, color: "text-orange-600" },
       { name: "GitHub", icon: SiGithub, color: "text-foreground" },
       { name: "REST API", icon: TbApi, color: "text-primary" },
@@ -93,7 +97,7 @@ const getAnimationClass = (direction: "left" | "right", speed: "fast" | "normal"
 const SkillMarquee = ({ category }: { category: SkillCategory }) => {
   const animationClass = getAnimationClass(category.direction, category.speed);
   // Duplicate skills for seamless loop
-  const duplicatedSkills = [...category.skills, ...category.skills, ...category.skills, ...category.skills];
+  const duplicatedSkills = [...category.skills, ...category.skills, ...category.skills, ...category.skills, ...category.skills, ...category.skills, ...category.skills];
 
   return (
     <div className="marquee-pause overflow-hidden py-4 section-container">
@@ -121,7 +125,7 @@ const Skills = () => {
             My Skills
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Technologies I <span className="text-gradient">Work With</span>
+            Technologies I <span className="gradient-text">Work With</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit spanning frontend, backend, databases, and modern development tools
@@ -129,11 +133,11 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-8 px-5 ">
         {skillCategories.map((category, index) => (
           <div key={category.title} className="animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-            <div className="section-container mb-2">
-              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+            <div className="section-container mb-2 p-0">
+              <h3 className=" text-muted-foreground uppercase tracking-wider gradient-text text-2xl sm:text-2xl md:text-3xl font-bold">
                 {category.title}
               </h3>
             </div>

@@ -97,7 +97,7 @@ const Hero = () => {
               <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Download CV
             </a>
-            <a
+            {/* <a
               href="https://github.com/Riyad-07"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,7 +105,7 @@ const Hero = () => {
             >
               <Github className="w-5 h-5" />
               View GitHub
-            </a>
+            </a> */}
 
           </motion.div>
 
