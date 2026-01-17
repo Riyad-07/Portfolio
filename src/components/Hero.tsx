@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Mail, Phone, ArrowDown, MapPin, Download } from "lucide-react";
+import { Github, Mail, Phone, MapPin, Download } from "lucide-react";
 import React, { useState, useEffect } from "react";
-import { Button } from "./ui/button";
 
 const Hero = () => {
 
