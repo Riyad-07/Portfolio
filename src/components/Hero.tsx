@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 import reactpng from "../../public/react.png"
 import nodejspng from "../../public/nodejs.png"
 import mongodb from "../../public/MongoDB.png"
-import dsa from "../../public/dsa.png"
+import dsa from "../../public/dsa-icon.png"
 import express from "../../public/expressJs.png"
-import algorithm from "../../public/algorithm.png"
+import algorithm from "../../public/algorithm-icon.png"
 
 const Hero = () => {
 
@@ -209,9 +209,9 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-6, 14, -6] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2.2 }}
-              className="absolute top-[10%] -left-10 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center"
+              className="absolute top-[10%] -left-10 px-4 py-2 rounded-lg glass-card text-sm font-mono text-center "
             >
-              <img src={algorithm} alt="" className="h-10 w-10 mx-auto scale-125" />
+              <img src={algorithm} alt="" className="h-10 w-10 mx-auto" />
               Algorithms
             </motion.div>
 

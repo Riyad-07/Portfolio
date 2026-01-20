@@ -12,7 +12,7 @@ const projects = [
     liveUrl: "https://airbnb-01.onrender.com",
     features: ["Dynamic Listings", "Modern UI", "MongoDB Backend", "Responsive Design"],
     icon: Database,
-    tech: ["React.js", "Node.js", "MongoDB", "Express"],
+    tech: ["Node.js", "MongoDB", "Express", "Ejs"],
   },
   {
     title: "Chat Application",
